@@ -1,3 +1,5 @@
+import profile from "../assets/photo.jpg";
+
 export default {
   basics: {
     name: "Nidhi patel",
@@ -5,8 +7,9 @@ export default {
     email: "patelnidhi1628@gmail.com",
     phone: "+91 87348 38561",
     location: "Mehsana",
-    summary: "I’m a passionate Data Analyst with a strong interest in exploring data and transforming raw information into meaningful insights for better decision-making. I work with tools like Microsoft Excel, Python, MySQL, and Power BI to analyze, clean, and visualize datasets effectively. As a fresher, I focus on building practical projects and continuously improving my analytical and problem-solving skills.",
-    avatar: "public/Img/photo.jpg",
+    summary:
+      "I’m a passionate Data Analyst with a strong interest in exploring data and transforming raw information into meaningful insights for better decision-making. I work with tools like Microsoft Excel, Python, MySQL, and Power BI to analyze, clean, and visualize datasets effectively. As a fresher, I focus on building practical projects and continuously improving my analytical and problem-solving skills.",
+    avatar: profile,
     social: [
       {
         platform: "LinkedIn",
@@ -116,7 +119,7 @@ export default {
         "Built an interactive Power BI dashboard to analyze Spotify streaming data, highlighting top songs, artists, and music streaming trends. Performed data cleaning and transformation on Spotify datasets using Excel and Power BI to ensure accurate analysis and reporting. Designed dynamic visualizations and slicers to explore metrics such as stream counts, track popularity, and temporal listening patterns.",
       image:
         "https://github.com/Nidhi-0110/Spotify_dashboard/blob/main/index.png?raw=true",
-      tags: ["Power BI", "Power Query", "Data Cleaning","Data Visualization"],
+      tags: ["Power BI", "Power Query", "Data Cleaning", "Data Visualization"],
       liveUrl: "#SPOTIFY_DASHBOARD_LIVE_URL",
       sourceUrl: "https://github.com/Nidhi-0110/Spotify_dashboard",
     },
@@ -137,7 +140,7 @@ export default {
         "Developed a comprehensive fitness management platform that enables users to register, track workouts, calculate BMI, access diet plans, and purchase fitness products online. Implemented modules for membership management, trainer interaction, attendance tracking, and secure authentication to streamline gym operations and enhance user engagement through a centralized digital fitness system.",
       image:
         "https://github.com/Nidhi-0110/Avido-Fitness-Project-/blob/main/Avido-Fitness/image.jpg?raw=true",
-      tags: ["React.js", "Boostrap", "JavaScript","HTML", "CSS"],
+      tags: ["React.js", "Boostrap", "JavaScript", "HTML", "CSS"],
       liveUrl: "https://avido-fitnesss.netlify.app/",
       sourceUrl:
         "https://github.com/Nidhi-0110/Avido-Fitness-Project-/tree/main/Avido-Fitness",
