@@ -190,9 +190,9 @@ export default {
   ],
 
   meta: {
-    title: "Jane Doe | Full-Stack Developer",
+    title: "Resume - Nidhi Patel",
     description:
-      "Portfolio and resume of Jane Doe, Full-Stack Developer specializing in React, Node.js and cloud architecture.",
+      "Portfolio and resume of Nidhi, Data Analyst skilled in Python, SQL, and data visualization.",
     twitterHandle: "@janedoe",
     language: "en",
     themeColor: "#2563eb",
