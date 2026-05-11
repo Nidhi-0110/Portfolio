@@ -3,7 +3,6 @@ import certificate1 from "../assets/certificate1.pdf";
 import certificate2 from "../assets/certificate2.pdf";
 import certificate3 from "../assets/certificate3.pdf";
 import certificate4 from "../assets/certificate4.pdf";
-import resume from "../assets/NidhiResume.pdf";
 
 export default {
   basics: {
@@ -15,7 +14,7 @@ export default {
     summary:
       "I’m a passionate Data Analyst with a strong interest in exploring data and transforming raw information into meaningful insights for better decision-making. I work with tools like Microsoft Excel, Python, MySQL, and Power BI to analyze, clean, and visualize datasets effectively. As a fresher, I focus on building practical projects and continuously improving my analytical and problem-solving skills.",
     avatar: profile,
-    Resume: resume,
+    Resume: "",
     social: [
       {
         platform: "LinkedIn",

@@ -3,10 +3,10 @@ import { Download, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SocialLinks from "@/components/SocialLinks";
 import AnimatedSection from "@/components/AnimatedSection";
-import profile from "@/data/profile";
+import Profile from "@/data/profile";
 
 export default function Hero() {
-  const { name, title, social, Resume: resume } = profile.basics;
+  const { name, title, social, Resume: resume } = Profile.basics;
 
   const nameVariants = {
     hidden: { opacity: 0, y: -20 },
