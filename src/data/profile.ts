@@ -21,7 +21,11 @@ export default {
         url: "https://github.com/Nidhi-0110",
         icon: "github",
       },
-      // { platform: "Twitter", url: "#YOUR_TWITTER_URL", icon: "twitter" }
+      // {
+      //   platform: "tiwtter",
+      //   url: "url",
+      //   icon: "tiwtter",
+      // },
     ],
   },
 
@@ -73,14 +77,28 @@ export default {
 
   experience: [
     {
+      role: "Data Analyst Internship",
+      company: "Elevate Labs",
+      location: "Rempote",
+      start: "Feb 2026",
+      end: "April 2026",
+      bullets: [
+        "During this journey, I worked on real-world datasets and gained hands-on experience in data cleaning, data analysis, and reporting using Excel, SQL, and Power BI.",
+        "This experience strengthened my ability to transform raw data into meaningful insights that support better decision-making. I’m also honored to be recognized as a Best Performer, which motivates me to keep learning and growing in the field of Data Analytics.",
+      ],
+      certificate: "src/assets/certificate2.pdf",
+    },
+    {
       role: "Frontend Developer Internship",
       company: "Techmicra It Solutions",
       location: "Ahmedabad",
       start: "Jan 2025",
       end: "April 2025",
       bullets: [
-        "Worked as a Frontend Developer Intern on the Avido Fitness web application, developing responsive user interfaces and interactive pages using modern web technologies. Contributed to features such as gym membership plans, BMI calculator, diet plans, and product pages to improve user experience and simplify online fitness management.",
+        "Developed UI components using modern frontend technologies.Built interactive features including Gym Membership Plans and Diet Plan modules.",
+        "Designed product and fitness management pages to improve user experience. Focused on creating clean, user-friendly interfaces for seamless online fitness management.",
       ],
+      certificate: "src/assets/certificate1.pdf",
     },
   ],
 
@@ -173,19 +191,13 @@ export default {
       name: "Data Analytics",
       issuer: "NoviTech R&D Private Limited",
       date: "December 29th to January 29th 2025-2026",
-      url: "https://media.licdn.com/dms/image/v2/D562DAQEc_JNED65mFg/profile-treasury-document-cover-images_800/B56Z2WfOFZKwA8-/0/1776346261794?e=1776952800&v=beta&t=Lh9wE6h9ahnOsLeNiT8garcnz4tvIe1XZiSfiO1ByPI",
+      url: "src/assets/certificate3.pdf",
     },
     {
       name: "Power BI Micro Course",
       issuer: "SkillCourse",
       date: "2026",
-      url: "https://media.licdn.com/dms/image/v2/D562DAQF7z5UkvFkbRQ/profile-treasury-image-shrink_1280_1280/B56ZvGZQIXKIAU-/0/1768560068966?e=1776952800&v=beta&t=br_N67x7xv3paSQrv_uY_IUiaZh1hT22XL5jp-VA7uI",
-    },
-    {
-      name: "Frontend Development",
-      issuer: "Techmicra It Solutions",
-      date: "January 2025 to April 2025",
-      url: "https://media.licdn.com/dms/image/v2/D562DAQEV1eZPybVpVg/profile-treasury-document-images_1920/B56ZsIBNQ7LAAw-/1/1765366095439?e=1777507200&v=beta&t=0c6pHGgg_3NNdZAB5FOCVo3eZ_pyzQYfx0ZX6qiQL5M",
+      url: "src/assets/certificate4.pdf",
     },
   ],
 

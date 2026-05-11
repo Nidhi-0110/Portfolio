@@ -10,23 +10,28 @@ export default function Hero() {
 
   const nameVariants = {
     hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   const titleVariants = {
     hidden: { opacity: 0, y: -10 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   const buttonVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
-  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
 
   return (
-    <AnimatedSection id="hero" noPadding className="relative min-h-screen flex justify-center items-center w-full overflow-hidden">
+    <AnimatedSection
+      id="hero"
+      noPadding
+      className="relative min-h-screen flex justify-center items-center w-full overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 dark:from-primary/10 dark:to-accent/10" />
 
       <div className="w-full max-w-4xl px-4 sm:px-6 md:px-8 mx-auto relative z-10">
@@ -34,7 +39,9 @@ export default function Hero() {
           {prefersReducedMotion ? (
             <>
               <h1 className="text-5xl md:text-7xl font-bold mb-4">{name}</h1>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8">{title}</p>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+                {title}
+              </p>
             </>
           ) : (
             <>
@@ -43,8 +50,7 @@ export default function Hero() {
                 variants={nameVariants}
                 initial="hidden"
                 animate="visible"
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
+                transition={{ duration: 0.5, delay: 0.2 }}>
                 {name}
               </motion.h1>
 
@@ -53,8 +59,7 @@ export default function Hero() {
                 variants={titleVariants}
                 initial="hidden"
                 animate="visible"
-                transition={{ duration: 0.5, delay: 0.4 }}
-              >
+                transition={{ duration: 0.5, delay: 0.4 }}>
                 {title}
               </motion.p>
             </>
@@ -62,8 +67,10 @@ export default function Hero() {
 
           {prefersReducedMotion ? (
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 w-full">
-              <Button className="bg-primary hover:bg-primary/90" onClick={() => window.print()}>
-                <Download className="mr-2 h-4 w-4" /> Download PDF
+              <Button
+                className="bg-primary hover:bg-primary/90"
+                onClick={() => window.open("/src/assets/NidhiResume.pdf", "_blank")}>
+                <Download className="mr-2 h-4 w-4" /> View Resume
               </Button>
               <Button variant="outline" asChild>
                 <a href="#contact">
@@ -77,10 +84,11 @@ export default function Hero() {
               variants={buttonVariants}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              <Button className="bg-primary hover:bg-primary/90" onClick={() => window.print()}>
-                <Download className="mr-2 h-4 w-4" /> Download PDF
+              transition={{ duration: 0.5, delay: 0.6 }}>
+              <Button
+                className="bg-primary hover:bg-primary/90"
+                onClick={() => window.open("/src/assets/NidhiResume.pdf", "_blank")}>
+                <Download className="mr-2 h-4 w-4" /> View Resume
               </Button>
               <Button variant="outline" asChild>
                 <a href="#contact">
@@ -97,7 +105,10 @@ export default function Hero() {
       {!prefersReducedMotion && (
         <div className="absolute inset-0 z-0 pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl animate-float" />
-          <div className="absolute top-2/3 left-2/3 w-64 h-64 bg-accent/10 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: "2s" }} />
+          <div
+            className="absolute top-2/3 left-2/3 w-64 h-64 bg-accent/10 rounded-full mix-blend-multiply filter blur-xl animate-float"
+            style={{ animationDelay: "2s" }}
+          />
         </div>
       )}
     </AnimatedSection>
