@@ -6,7 +6,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import profile from "@/data/profile";
 
 export default function Hero() {
-  const { name, title, social } = profile.basics;
+  const { name, title, social, Resume: resume } = profile.basics;
 
   const nameVariants = {
     hidden: { opacity: 0, y: -20 },
@@ -69,7 +69,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 w-full">
               <Button
                 className="bg-primary hover:bg-primary/90"
-                onClick={() => window.open("/src/assets/NidhiResume.pdf", "_blank")}>
+                onClick={() => window.open(resume, "_blank")}>
                 <Download className="mr-2 h-4 w-4" /> View Resume
               </Button>
               <Button variant="outline" asChild>
@@ -87,7 +87,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.6 }}>
               <Button
                 className="bg-primary hover:bg-primary/90"
-                onClick={() => window.open("/src/assets/NidhiResume.pdf", "_blank")}>
+                onClick={() => window.open(resume, "_blank")}>
                 <Download className="mr-2 h-4 w-4" /> View Resume
               </Button>
               <Button variant="outline" asChild>

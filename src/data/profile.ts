@@ -1,4 +1,9 @@
 import profile from "../assets/photo.jpg";
+import certificate1 from "../assets/certificate1.pdf";
+import certificate2 from "../assets/certificate2.pdf";
+import certificate3 from "../assets/certificate3.pdf";
+import certificate4 from "../assets/certificate4.pdf";
+import resume from "../assets/NidhiResume.pdf";
 
 export default {
   basics: {
@@ -10,6 +15,7 @@ export default {
     summary:
       "I’m a passionate Data Analyst with a strong interest in exploring data and transforming raw information into meaningful insights for better decision-making. I work with tools like Microsoft Excel, Python, MySQL, and Power BI to analyze, clean, and visualize datasets effectively. As a fresher, I focus on building practical projects and continuously improving my analytical and problem-solving skills.",
     avatar: profile,
+    Resume: resume,
     social: [
       {
         platform: "LinkedIn",
@@ -86,7 +92,7 @@ export default {
         "During this journey, I worked on real-world datasets and gained hands-on experience in data cleaning, data analysis, and reporting using Excel, SQL, and Power BI.",
         "This experience strengthened my ability to transform raw data into meaningful insights that support better decision-making. I’m also honored to be recognized as a Best Performer, which motivates me to keep learning and growing in the field of Data Analytics.",
       ],
-      certificate: "src/assets/certificate2.pdf",
+      certificate: certificate2,
     },
     {
       role: "Frontend Developer Internship",
@@ -98,7 +104,7 @@ export default {
         "Developed UI components using modern frontend technologies.Built interactive features including Gym Membership Plans and Diet Plan modules.",
         "Designed product and fitness management pages to improve user experience. Focused on creating clean, user-friendly interfaces for seamless online fitness management.",
       ],
-      certificate: "src/assets/certificate1.pdf",
+      certificate: certificate1,
     },
   ],
 
@@ -191,13 +197,13 @@ export default {
       name: "Data Analytics",
       issuer: "NoviTech R&D Private Limited",
       date: "December 29th to January 29th 2025-2026",
-      url: "src/assets/certificate3.pdf",
+      url: certificate3,
     },
     {
       name: "Power BI Micro Course",
       issuer: "SkillCourse",
       date: "2026",
-      url: "src/assets/certificate4.pdf",
+      url: certificate4,
     },
   ],
 
